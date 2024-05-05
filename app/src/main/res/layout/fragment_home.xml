@@ -8,8 +8,6 @@
     android:backgroundTint="#EDE7E7"
     tools:context=".FragmentHome">
 
-
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="676dp"
@@ -148,7 +146,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marwaginTop="10dp"
+                                    android:layout_marginTop="10dp"
                                     android:gravity="center"
                                     android:text="Future Events"
                                     android:textSize="30sp">
