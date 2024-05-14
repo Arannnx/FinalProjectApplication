@@ -8,8 +8,6 @@
     android:backgroundTint="#EDE7E7"
     tools:context=".FragmentHome">
 
-
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="676dp"
@@ -82,6 +80,51 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_columnSpan="2"
+                        app:cardBackgroundColor="@color/black"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="12dp"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="16dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="140dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="193dp"
+                                android:layout_height="130dp"
+                                android:layout_gravity="bottom"
+                                android:src="@drawable/img" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="center"
+                                    android:textColor="@color/white"
+                                    android:text="Ongoing Events"
+                                    android:textSize="30sp">
+
+                                </TextView>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/future"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnSpan="2"
+                        app:cardBackgroundColor="@color/black"
                         android:layout_columnWeight="1"
                         android:layout_margin="12dp"
                         app:cardCornerRadius="4dp"
@@ -108,47 +151,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="10dp"
-                                    android:gravity="center"
-                                    android:text="Ongoing Events"
-                                    android:textSize="30sp">
-
-                                </TextView>
-                            </LinearLayout>
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/future"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_columnSpan="2"
-                        android:layout_columnWeight="1"
-                        android:layout_margin="12dp"
-                        app:cardCornerRadius="4dp"
-                        app:cardElevation="16dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="140dp"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="200dp"
-                                android:layout_height="130dp"
-                                android:layout_gravity="bottom"
-                                android:src="@drawable/img" />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_vertical"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marwaginTop="10dp"
+                                    android:textColor="@color/white"
                                     android:gravity="center"
                                     android:text="Future Events"
                                     android:textSize="30sp">
@@ -164,6 +167,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_columnSpan="2"
+                        app:cardBackgroundColor="@color/black"
                         android:layout_columnWeight="1"
                         android:layout_margin="12dp"
                         app:cardCornerRadius="4dp"
@@ -191,6 +195,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="10dp"
                                     android:gravity="center"
+                                    android:textColor="@color/white"
                                     android:text="Past Events"
                                     android:textSize="30sp">
 

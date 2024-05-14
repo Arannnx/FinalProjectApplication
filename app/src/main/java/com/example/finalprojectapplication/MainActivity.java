@@ -3,6 +3,7 @@ package com.example.finalprojectapplication;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
@@ -18,6 +19,7 @@ import com.example.finalprojectapplication.databinding.ActivityMainBinding;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
+    TextView marquee_text;
 
     ActivityMainBinding binding;
     DrawerLayout drawerLayout;
@@ -27,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        marquee_text=findViewById(R.id.marquee_text);
+        marquee_text.setSelected(true);
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
@@ -68,6 +72,9 @@ public class MainActivity extends AppCompatActivity {
             drawerLayout.closeDrawer(GravityCompat.START); // Close drawer after selection
             return true;
         });
+    }
+
+    private void repFragment(DepartmentFragment departmentFragment) {
     }
 
     private void repFragment(Fragment fragment) {

@@ -22,7 +22,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="367dp"
                 android:layout_height="match_parent">
 
                 <ImageView
@@ -34,11 +34,11 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
                     android:text="IntelTrack"
                     android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:layout_gravity="center"
-                    android:layout_margin="15dp"/>
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <TextView
@@ -50,6 +50,12 @@
                 android:layout_marginStart="15sp"
                 android:textStyle="bold"
                 android:text="Navigation Drawer"/>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="37dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/baseline_doorbell_24" />
         </LinearLayout>
 
         <fragment
@@ -69,11 +75,36 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="@id/bottom_nav_view"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toTopOf="@id/bottom_nav_view"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/layoutToolbar">
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutToolbar"
+            app:layout_constraintVertical_bias="0.0">
 
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="44dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="100dp"
+                tools:srcCompat="@drawable/loudspeaker" />
+
+            <TextView
+                android:id="@+id/marquee_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="110dp"
+                android:padding="3dp"
+                android:singleLine="true"
+                android:textSize="20sp"
+                android:ellipsize="marquee"
+                android:scrollHorizontally="true"
+                android:background="@color/black"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:text="Welcome to IntelTrack where you will always be updated on DTP events"
+                android:textColor="#7FF607" />
         </FrameLayout>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView

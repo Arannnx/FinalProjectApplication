@@ -6,9 +6,7 @@
     android:layout_height="match_parent"
     android:id="@+id/fragment_home"
     android:backgroundTint="#EDE7E7"
-    tools:context=".FragmentHome">
-
-
+    tools:context=".DepartmentFragment">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -85,11 +83,13 @@
                         android:layout_columnWeight="1"
                         android:layout_margin="12dp"
                         app:cardCornerRadius="4dp"
+                        android:clickable="true"
                         app:cardElevation="16dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="140dp"
+                            android:clickable="true"
                             android:orientation="horizontal">
 
                             <ImageView
@@ -126,11 +126,13 @@
                         android:layout_columnWeight="1"
                         android:layout_margin="12dp"
                         app:cardCornerRadius="4dp"
+                        android:clickable="true"
                         app:cardElevation="16dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="140dp"
+                            android:clickable="true"
                             android:orientation="horizontal">
 
                             <ImageView
@@ -148,7 +150,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marwaginTop="10dp"
+                                    android:layout_marginTop="10dp"
                                     android:gravity="center"
                                     android:text="Future Events"
                                     android:textSize="30sp">
@@ -167,11 +169,13 @@
                         android:layout_columnWeight="1"
                         android:layout_margin="12dp"
                         app:cardCornerRadius="4dp"
+                        android:clickable="true"
                         app:cardElevation="16dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="140dp"
+                            android:clickable="true"
                             android:orientation="horizontal">
 
                             <ImageView

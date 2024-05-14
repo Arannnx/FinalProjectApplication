@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph">
+
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:name="com.example.finalprojectapplication.FragmentHome"
+        android:label="FragmentHome">
+
+        <action
+            android:id="@+id/action_fragmentHome_to_ongoingEventsFragment"
+            app:destination="@id/ongoing" />
+
+        <action
+            android:id="@+id/action_fragmentHome_to_futureEventsFragment"
+            app:destination="@id/future" />
+
+        <action
+            android:id="@+id/action_fragmentHome_to_pastEventsFragment"
+            app:destination="@id/past" />
+
+        <!-- Add more actions as needed -->
+
+    </fragment>
+
+</navigation>
