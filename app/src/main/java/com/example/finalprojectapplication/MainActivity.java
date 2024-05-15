@@ -19,7 +19,6 @@ import com.example.finalprojectapplication.databinding.ActivityMainBinding;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
-    TextView marquee_text;
 
     ActivityMainBinding binding;
     DrawerLayout drawerLayout;
@@ -29,8 +28,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        marquee_text=findViewById(R.id.marquee_text);
-        marquee_text.setSelected(true);
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 

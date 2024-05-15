@@ -1,24 +1,60 @@
 package com.example.finalprojectapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.activity.EdgeToEdge;
+import android.view.View;
+import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import androidx.cardview.widget.CardView;
 
 public class FutureEvents extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_future_events);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+
+        CardView certiCard = findViewById(R.id.certification);
+        CardView exhibitCard = findViewById(R.id.exhibit);
+        CardView DatabaseCard = findViewById(R.id.database);
+
+        certiCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                opencerti();
+            }
         });
+
+        exhibitCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openexhibitCard();
+            }
+        });
+
+        DatabaseCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openDatabaseCard();
+            }
+        });
+
+
     }
+
+    public void opencerti() {
+        Intent intent = new Intent(this, Certification.class);
+        startActivity(intent);
+    }
+
+    public void openexhibitCard() {
+        Intent intent = new Intent(this, Certification.class);
+        startActivity(intent);
+    }
+
+    public void openDatabaseCard() {
+        Intent intent = new Intent(this, Database.class);
+        startActivity(intent);
+    }
+
 }

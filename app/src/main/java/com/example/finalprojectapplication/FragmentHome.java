@@ -6,9 +6,12 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import androidx.cardview.widget.CardView;
 
 public class FragmentHome extends Fragment {
+
+    TextView marquee_text;
 
     public FragmentHome() {
         // Required empty public constructor
@@ -19,6 +22,11 @@ public class FragmentHome extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
+        // Correctly find the TextView within the inflated view
+        marquee_text = view.findViewById(R.id.marquee_text);
+        marquee_text.setSelected(true);
+
+        // Correctly find the CardViews within the inflated view
         CardView ongoingCard = view.findViewById(R.id.ongoing);
         CardView futureCard = view.findViewById(R.id.future);
         CardView pastCard = view.findViewById(R.id.past);
@@ -28,7 +36,6 @@ public class FragmentHome extends Fragment {
             public void onClick(View v) {
                 openOngoing();
             }
-
         });
 
         futureCard.setOnClickListener(new View.OnClickListener() {

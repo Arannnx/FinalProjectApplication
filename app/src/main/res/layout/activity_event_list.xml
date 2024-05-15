@@ -8,7 +8,6 @@
     tools:context=".EventList">
 
     <ImageView
-        android:id="@+id/imageView"
         android:layout_width="241dp"
         android:layout_height="251dp"
         tools:layout_editor_absoluteX="86dp"
