@@ -8,6 +8,7 @@
     android:backgroundTint="#EDE7E7"
     tools:context=".FragmentHome">
 
+<<<<<<< HEAD
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="44dp"
@@ -31,6 +32,8 @@
         android:text="Welcome to IntelTrack where you will always be updated on DTP events"
         android:textColor="#7FF607" />
 
+=======
+>>>>>>> 83ae2b5b326b49182fed44d79a874f0c480c0242
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -177,6 +180,50 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="10dp"
                                     android:gravity="center"
+<<<<<<< HEAD
+=======
+                                    android:text="Ongoing Events"
+                                    android:textSize="30sp">
+
+                                </TextView>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/future"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="12dp"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="140dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="200dp"
+                                android:layout_height="130dp"
+                                android:layout_gravity="bottom"
+                                android:src="@drawable/img" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="center"
+>>>>>>> 83ae2b5b326b49182fed44d79a874f0c480c0242
                                     android:text="Future Events"
                                     android:textColor="@color/white"
                                     android:textSize="30sp">
