@@ -1,18 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:backgroundTint="#EDE7E7"
     tools:context=".OngoingEvents">
 
-    <TextView
-        android:id="@+id/textView2"
+    <!-- Ongoing Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ongoings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="BAYOOOT"
-        android:textSize="60dp"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="283dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_margin="12dp"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="#FF0000"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/ongoings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"> <!-- Red for debugging -->
+
+        <ImageView
+            android:layout_width="193dp"
+            android:layout_height="130dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/img" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="2nd Year IT Certification"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Future Card -->
+
+</FrameLayout>
